@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean class="com.beans.Employee" id="emp" scope="prototype">
+<property name="id" value="100"></property>
+		<property name="employee_name" value="Jin"></property>
+	
+</bean>
+
+<bean class="com.beans.Employee_details" id="empd" scope="prototype">
+	<property name="location" value="Seoul"></property>
+		</bean>
+	
+</beans>
+<!--bean class="com.beans.Employee" id="emp" scope="prototype">
+		<constructor-arg name="id" value="100"></constructor-arg>
+		<constructor-arg name="employee_name" value="Jin"></constructor-arg>
+		<constructor-arg name="location"></constructor-arg>
+			<list></list>
+			</bean >-->
